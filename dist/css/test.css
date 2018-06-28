@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box; }
+
+.grid-container {
+  max-width: 1180px;
+  margin: 0px auto;
+  padding: 0 10px 0 10px; }
+  .grid-container .grid-lg-1 {
+    width: 6.77966%;
+    float: left;
+    margin-left: 1.69492%; }
+  .grid-container .grid-lg-2 {
+    width: 15.25424%;
+    float: left;
+    margin-left: 1.69492%; }
+  .grid-container .grid-lg-3 {
+    width: 23.72881%;
+    float: left;
+    margin-left: 1.69492%; }
+  .grid-container .grid-lg-4 {
+    width: 32.20339%;
+    float: left;
+    margin-left: 1.69492%; }
+  .grid-container .grid-lg-5 {
+    width: 40.67797%;
+    float: left;
+    margin-left: 1.69492%; }
+  .grid-container .grid-lg-6 {
+    width: 49.15254%;
+    float: left;
+    margin-left: 1.69492%; }
+  .grid-container .grid-lg-7 {
+    width: 57.62712%;
+    float: left;
+    margin-left: 1.69492%; }
+  .grid-container .grid-lg-8 {
+    width: 66.10169%;
+    float: left;
+    margin-left: 1.69492%; }
+  .grid-container .grid-lg-9 {
+    width: 74.57627%;
+    float: left;
+    margin-left: 1.69492%; }
+  .grid-container .grid-lg-10 {
+    width: 83.05085%;
+    float: left;
+    margin-left: 1.69492%; }
+  .grid-container .grid-lg-11 {
+    width: 91.52542%;
+    float: left;
+    margin-left: 1.69492%; }
+  .grid-container .clear {
+    margin-left: 0px;
+    clear: left; }
+
+@media only screen and (max-width: 768px) {
+  [class*="grid-container"] [class*="grid-"] {
+    float: none;
+    width: 100%;
+    margin-left: 0; } }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Nunito', sans-serif; }
+
+main {
+  position: relative;
+  min-height: 100%;
+  overflow: auto; }
+  main header {
+    background-color: #082d40; }
+    main header .header-nav {
+      overflow: hidden; }
+      main header .header-nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: white; }
+      main header .header-nav li {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px; }
+        main header .header-nav li:hover {
+          background-color: #40aee3;
+          cursor: pointer; }
+        main header .header-nav li a {
+          color: white;
+          text-decoration: none; }
+      main header .header-nav .right {
+        float: right; }
+      main header .header-nav .sidebar-shown {
+        color: #40aee3; }
+      @media only screen and (max-width: 768px) {
+        main header .header-nav #sidebarToggleButton {
+          display: none; } }
+  main content {
+    width: 70%;
+    float: left;
+    padding: 30px 0 60px 0;
+    vertical-align: top; }
+  main aside {
+    background-color: #87c6e7;
+    width: 30%;
+    float: right; }
+  main footer {
+    background-color: #d8d8d8;
+    color: black;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px; }
+  @media only screen and (max-width: 768px) {
+    main content {
+      width: 100%; }
+    main aside {
+      display: none; } }
+
+.full-width {
+  width: 100%; }
+
+.center {
+  text-align: center; }
