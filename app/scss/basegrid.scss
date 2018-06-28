@@ -1,0 +1,54 @@
+// User variables
+$column-width: 80px;
+$column-margin: 20px;
+$column-amount: 12;
+$padding: $column-margin / 2;
+$mobile-breakpoint: 768px;
+
+// Width relative to user variables
+$width: ($column-width * $column-amount) + ($column-margin * ($column-amount - 1));
+
+* {
+    box-sizing: border-box;
+}
+
+// Grid classes
+@mixin grid($size) {
+    @for $i from 1 to $column-amount {
+
+        $grid-width: ((($column-width * $i) + ($column-margin * ($i - 1))) / $width) * 100%;
+
+        .grid-#{$size}-#{$i} {
+            width: $grid-width;
+            float: left;
+            margin-left: ($column-margin / $width) * 100%;
+        }
+    }
+}
+
+// Grid container
+.grid-container {
+    max-width: $width;
+    margin: 0px auto;
+    padding: 0 $padding 0 $padding;
+
+    @include grid('lg');
+    // todo build grid for medium and small, taking a bit too long...
+    //@include grid('md');
+    //@include grid('sm');
+    .clear {
+        margin-left: 0px;
+        clear: left;
+    }
+}
+
+// Grid classes for mobile/tablet
+@media only screen and (max-width: $mobile-breakpoint) {
+    [class*="grid-container"] {
+        [class*="grid-"] {
+            float: none;
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
