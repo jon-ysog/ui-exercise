@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#sidebarToggleButton").click(function(){var s=$("#aSide"),e=$("#sidebarToggleButton"),i=$("#content");s.is(":visible")?s.hide("fast",function(){e.removeClass("sidebar-shown"),i.addClass("full-width")}):(i.removeClass("full-width"),s.show("fast",function(){e.addClass("sidebar-shown")}))})});
