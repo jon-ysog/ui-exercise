@@ -1,0 +1,72 @@
+@import "colors";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    position: relative;
+    height: auto;
+    min-height: 100%;
+
+    header {
+        background-color: $color-header-background;
+
+        .header-nav {
+            overflow: hidden;
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                color: $color-header-nav-text;
+            }
+
+            li {
+                float: left;
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+
+                &:hover {
+                    background-color: $color-header-nav-hover-background;
+                    cursor: pointer;
+                }
+
+                a {
+                    color: $color-header-nav-text;
+                    text-decoration: none;
+                }
+            }
+
+            .right {
+                float: right;
+            }
+        }
+    }
+
+    content {
+        width: 70%;
+        float: left;
+    }
+
+    aside {
+        background-color: $color-sidebar-background;
+        width: 30%;
+        float: right;
+    }
+
+    footer {
+        background-color: $color-footer-background;
+        color: $color-footer-text;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+}
+
+.center {
+    text-align: center;
+}
